@@ -1,0 +1,67 @@
+#support-popup{
+    color: white;
+    background-color: black;
+    box-shadow: 0 0 6px 0 black;
+    border-bottom: 1px gray solid;
+}
+#support-popup-close-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 5px;
+    color: whitesmoke;
+    background-color: grey;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    line-height: 11px;
+    border-radius: 2px;
+    border: solid white 1px;
+    opacity: 0.9;
+    -webkit-user-select: none; /* Chrome all / Safari all */
+    -moz-user-select: none;   /* Firefox all */
+    -ms-user-select: none;  /* IE 10+ */
+    user-select: none;  /* Likely future */
+}
+#support-popup-close-btn:hover{
+    opacity: 1;
+    background-color: red;
+}
+#support-popup-title{
+    padding: 5px;
+    font-size: 20px;
+}
+#support-popup-message{
+    margin: 5px;
+    background-color: whitesmoke;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+#support-popup-controls{
+    display: inline-flex;
+    padding: 5px;
+    margin-bottom: 5px;
+    height: 35px;
+    width: 100%;
+}
+#support-amounts-label{
+    margin-right: 5px;
+}
+label{
+    margin-right: 5px;
+    text-align: center;
+    line-height: 25px;
+}
+select{
+    margin-right: 10px;
+}
+#paypal-button{
+    position: absolute;
+    margin: 2px;
+    right: 0;
+}
+#paypal-button-image{
+    height:100%;
+}

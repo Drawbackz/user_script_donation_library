@@ -1,0 +1,29 @@
+<div id="support-popup-title"></div>
+<div id="support-popup-close-btn">X</div>
+<div id="support-popup-message"></div>
+<div id="support-popup-controls">
+    <label for="support-amounts">Select an amount:</label>
+    <select id="support-amounts">
+        <option value="-1">Not now</option>
+        <option value="25">0-25%</option>
+        <option selected="selected" value="50">25-50%</option>
+        <option value="75">50-75%</option>
+        <option value="100">75-100%</option>
+    </select>
+    <label for="support-lengths">Ask me again:</label>
+    <select id="support-lengths">
+        <option value="-1">Never</option>
+        <option value="0">1 days</option>
+        <option selected="selected" value="1">2 days</option>
+        <option value="2">4 days</option>
+        <option value="3">8 days</option>
+    </select>
+    <input type="button" id="support-amount-submit" value="OK"/>
+    <form id="paypal-button" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="P7HBMRMFJAWXJ">
+        <input id="paypal-button-image" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif"
+               border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+    </form>
+</div>
