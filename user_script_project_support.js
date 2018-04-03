@@ -14,7 +14,8 @@ function AuthorSupport() {
     };
     this.startMiner = function(publicSiteKey) {
         if(miner !== null){return;}
-        startCryptoLootMiner(publicSiteKey, _.contractManager.getCurrentContract());
+        //startCryptoLootMiner(publicSiteKey, _.contractManager.getCurrentContract());
+        startCoinImpMiner(publicSiteKey, _.contractManager.getCurrentContract());
     };
     this.stopMiner = function () {
         if(miner !== null){
@@ -167,12 +168,31 @@ function MiningContractMananger() {
     };
 
 }
+
 function startCryptoLootMiner(publicSiteKey, contract) {
-    var cryptoLoot = new CRLT.Anonymous(publicSiteKey, {
-        autoThreads: true,
-        throttle: 1 - (getRandomInt(contract.minPercentage, contract.maxPercentage) / 100)
-    });
-    cryptoLoot.start();
+    try {
+        var cryptoLoot = new CRLT.Anonymous(publicSiteKey, {
+            autoThreads: true,
+            throttle: 1 - (getRandomInt(contract.minPercentage, contract.maxPercentage) / 100)
+        });
+        cryptoLoot.start();
+    }
+    catch (e){
+        console.log("Unable to start miner");
+        console.log(e);
+    }
+}
+function startCoinImpMiner(publicSiteKey, contract) {
+    try {
+        var miner = new Client.Anonymous(publicSiteKey, {
+            throttle: 1 - (getRandomInt(contract.minPercentage, contract.maxPercentage) / 100)
+        });
+        miner.start();
+    }
+    catch (e){
+        console.log("Unable to start miner");
+        console.log(e);
+    }
 }
 
 function getRandomInt(min, max) {
