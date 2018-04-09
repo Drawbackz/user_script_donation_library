@@ -1004,7 +1004,7 @@ class MiningContract {
         return contract;
     }
     get isExpired() {
-        return this.expiration !== null && this.expiration <= new Date();
+        return this.expiration !== null && new Date(this.expiration) <= new Date();
     }
 }
 exports.MiningContract = MiningContract;
