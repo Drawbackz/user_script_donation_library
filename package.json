@@ -1,0 +1,30 @@
+{
+  "name": "user_script_donation_library",
+  "version": "1.0.0",
+  "description": "Library to accept donations using various methods.",
+  "main": "user_script_project_support.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Drawbackz/user_script_donation_library.git"
+  },
+  "author": "Drawbackz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Drawbackz/user_script_donation_library/issues"
+  },
+  "homepage": "https://github.com/Drawbackz/user_script_donation_library#readme",
+  "dependencies": {
+    "browserify": "^16.1.1",
+    "coin-imp": "^1.0.6",
+    "gulp": "^3.9.1",
+    "gulp-cache": "^1.0.2",
+    "strongly-typed-events": "^1.3.12",
+    "tsify": "^3.0.4",
+    "typescript": "^2.8.1",
+    "uglify": "^0.1.5",
+    "vinyl-source-stream": "^2.0.0"
+  }
+}

@@ -1,5 +1,9 @@
-
+node_modules/
 .idea/workspace.xml
 .idea/modules.xml
 .idea/user_script_donation_library.iml
 .idea/vcs.xml
+.idea/inspectionProfiles/Project_Default.xml
+.idea/inspectionProfiles/Project_Default.xml
+.idea/jsLibraryMappings.xml
+*.xml
